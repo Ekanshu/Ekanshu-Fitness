@@ -1,0 +1,183 @@
+/* UNIVERSAL STYLING */
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Concert One', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:   url("../src/bg.jpg") repeat;
+    background-size: 100%;
+}
+.btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+}
+.btn:hover{
+    color: white;
+    background-color: green;
+}
+
+/* HEADER STYLING */
+/* Left Box */
+#leftBox{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#leftBox img{
+    position: relative;
+    left: 26px;
+    width: 36px;
+    filter: invert(100%);
+    margin: auto;
+}
+/* Mid Box */
+#midBox{
+    text-align: center;
+    clear: both;
+    width: 50%;
+    margin: 22px auto;
+    padding: 10px;
+}
+.navbar li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+.navbar li a.active{
+    border: 2px solid gray;
+    background-color: green;
+    border-radius: 10px;
+}
+.navbar li a:hover{
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+}
+/* Right Box */
+#rightBox{
+    position: absolute;
+    right: 75px;
+    top: 28px;
+}
+#rightBox img{
+    width: 30px;
+    margin: 0px 10px;
+}
+
+/* MAIN BODY STYLING */
+.container{
+    backdrop-filter: blur(7px);
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 32%;
+    margin: 100px;
+    padding: 27px;
+}
+.container h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+}
+.form-group input{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: block;
+    width: 90%;
+    padding: 3px;
+    margin: 11px auto;
+    font-size: 18px;
+    text-align: center;
+}
+form button{
+    background: #9b9b9b;
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+/* RESPONSIVE DESIGNING */
+@media screen and (max-width:1100px) {
+    #leftBox{
+        top: 18px;
+    }
+    .navbar li{
+        margin: 0px 5px;
+    }
+    .navbar li a{
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+    #rightBox{
+        top: 35px;
+        right: 20px;
+    }
+    #rightBox img{
+        width: 20px;
+        margin: 0px 10px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    .form-group input{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .form-group input{
+        background-color: green;
+    }
+    #leftBox{
+        position: static;
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        width: 200px;
+        margin: 0px auto;
+    }
+    #leftBox img{
+        width: 30px;
+    }
+    #leftBox div{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    #midBox{
+        margin: 0px auto;
+        padding: 0px;
+        width: 100%;
+    }
+    #rightBox{
+        position: absolute;
+        right: 10px;
+        top: 95%;
+    }
+    #rightBox img{
+        margin: 2px;
+    }
+    .container{
+        width: 80%;
+        margin: 100px auto;
+        padding: 17px;
+    }
+    .container h1{
+        font-size: 16px;
+    }
+    .form-group input{
+        font-size: 12px;
+    }
+    form button{
+        font-size: 12px;
+    }
+}
